@@ -1,0 +1,60 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#3b82f6;
+  --text:#e6eef6;
+  --max-width:900px;
+  --radius:10px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg),#071024 80%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:32px auto;
+  padding:24px;
+}
+
+.site-header{
+  background:linear-gradient(90deg, rgba(59,130,246,0.12), transparent);
+  border-radius:var(--radius);
+  padding:28px 24px;
+  margin:24px auto;
+  text-align:center;
+}
+
+.site-header h1{margin:0;font-size:1.9rem;letter-spacing:0.4px}
+.tagline{color:var(--muted);margin:6px 0 0}
+.contact a{color:var(--accent);text-decoration:none}
+
+main section{
+  background:rgba(255,255,255,0.02);
+  border-radius:8px;
+  padding:20px;
+  margin:18px 0;
+}
+
+h2{margin:0 0 10px;color:#dbe9ff}
+.skills-list{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.skills-list li{
+  background:rgba(255,255,255,0.03);
+  padding:8px 12px;border-radius:999px;color:var(--muted);font-size:0.95rem;
+}
+
+.project{margin-bottom:12px}
+.project h3{margin:0 0 6px;font-size:1.05rem;color:#fff}
+.hint{color:var(--muted);font-size:0.9rem}
+
+.site-footer{text-align:center;margin:20px auto;color:var(--muted);font-size:0.9rem}
+@media (max-width:640px){
+  .container{margin:18px 16px;padding:18px}
+  .site-header h1{font-size:1.5rem}
+}
